@@ -57,11 +57,11 @@ friend ostream& operator<<(ostream& out,const Course& c);
 };
 ostream& operator<<(ostream& out,const Course& c)
 {
-cout << "Course Code: "<< c.courseCode << endl;
-cout << "Course Name: "<< c.courseName << endl;
-cout << "Credit Hours: "<< c.creditHours << endl;
-cout << "Max Capacity: "<< c.maxCapacity << endl;
-cout << "Enrolled Count: "<< c.enrolledCount << endl;
+cout << "Course Code= "<< c.courseCode << endl;
+cout << "Course Name= "<< c.courseName << endl;
+cout << "Credit Hours= "<< c.creditHours << endl;
+cout << "Max Capacity= "<< c.maxCapacity << endl;
+cout << "Enrolled Count= "<< c.enrolledCount << endl;
 return out;
 }
 #endif
