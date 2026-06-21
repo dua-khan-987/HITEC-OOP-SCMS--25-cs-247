@@ -5,8 +5,10 @@ Book::Book(const std::string& itemID, const std::string& title,
     const std::string& isbn, const std::string& genre,
            int copiesAvailable): LibraryItem(itemID, title, author, publicationYear),
       isbn(isbn), genre(genre), copiesAvailable(copiesAvailable) {}
-std::string Book::getISBN() const { return isbn; }
-std::string Book::getGenre() const { return genre; }
+std::string Book::getISBN()
+ const { return isbn; }
+std::string Book::getGenre()
+ const { return genre; }
 int Book::getCopiesAvailable() const { return copiesAvailable; }
 void Book::setISBN(const std::string& isbn) { this->isbn = isbn; }
 void Book::setGenre(const std::string& genre) { this->genre = genre; }
