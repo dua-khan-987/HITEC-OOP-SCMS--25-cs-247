@@ -20,12 +20,11 @@ public:
         cout << "\n--- Faculty Information ---" << endl;
         cout << "Name: " << name << endl;
         cout << "CNIC: " << cnic << endl;
-        cout << "Age: " << age << endl;
-        cout << "Contact: " << contact << endl;
+  cout << "Age: " << age << endl;
+ cout << "Contact: " << contact << endl;
         cout << "Employee ID: " << employeeID << endl;
-        cout << "Department: " << department << endl;
-        cout << "Designation: " << designation << endl;
-    }
+     cout << "Department: " << department << endl;
+        cout << "Designation: " << designation << endl; }
     string getEmployeeID() const { return employeeID; }
     string getDepartment() const { return department; }
     string getDesignation() const { return designation; }
