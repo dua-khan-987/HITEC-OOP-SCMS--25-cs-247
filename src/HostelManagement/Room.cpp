@@ -10,7 +10,8 @@ Room::Room(int roomNumber, const std::string& type, int floor)
     for (int i = 0; i < MAX_OCCUPANTS; ++i) {
         occupants[i] = nullptr;
     }}
-int Room::capacityFromType(const std::string& roomType) const {
+int Room::capacityFromType
+(const std::string& roomType) const {
     if (roomType == "double") {
         return 2; }
     if (roomType == "triple") {

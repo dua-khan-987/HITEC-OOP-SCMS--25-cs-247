@@ -26,9 +26,12 @@ instructor = inst;
 maxCapacity = capacity;
 enrolledCount = 0;
 }
-string getCourseCode(){
+string getCourseCode()
+
+{
 return courseCode;}
-string getCourseName(){
+string getCourseName()
+{
 return courseName;}
 int getCreditHours()
 {
