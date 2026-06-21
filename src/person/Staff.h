@@ -1,20 +1,29 @@
 #ifndef STAFF_H
 #define STAFF_H
+
 #include "Person.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 class Staff : public Person
 {
 private:
     string staffID;
     string role;
     double salary;
+
 public:
-    Staff(string n, string c, int a, string con, string id, string r, double s)
-        : Person(n, c, a, con)
+    Staff(string n, string c, int a, string con,
+          string id, string r, double s)
+        : Person(n, c, a, con),
+          staffID(id),
+          role(r),
+          salary(s)
     {
-        staffID = id;
-        role = r;
-        salary = sal;
     }
+
     void displayInfo() override
     {
         cout << "\n--- Staff Information ---" << endl;
@@ -26,8 +35,21 @@ public:
         cout << "Role: " << role << endl;
         cout << "Salary: Rs. " << salary << endl;
     }
-    string getStaffID() const { return staffID; }
-    string getRole() const { return role; }
-    double getSalary() const { return salary; }
+
+    string getStaffID() const
+    {
+        return staffID;
+    }
+
+    string getRole() const
+    {
+        return role;
+    }
+
+    double getSalary() const
+    {
+        return salary;
+    }
 };
+
 #endif
